@@ -1,0 +1,47 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  .city {
+    background: url('./background.jpg') repeat-x; 
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .car {
+    background: url('./mercedes.png') no-repeat; 
+    background-size: contain;
+    height: 500px;
+    width: 1000px;
+    position: absolute;
+    bottom: 5vh;
+    left: -200px;
+    top: 500px;
+    animation: moveCar 10s forwards;
+  }
+  
+  @keyframes moveCar {
+    from {
+      left: 0px;
+    }
+  
+    to {
+      left: calc(100% - 250px);
+      
+    }
+  }
+  
+  @keyframes movie {
+    from {
+      left: 0px;
+    }
+  
+    to {
+      left: calc(100% - 250px);
+    }
+  }
