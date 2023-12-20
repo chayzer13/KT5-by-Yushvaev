@@ -14,17 +14,47 @@ body, html {
   }
   
   .car {
-    background: url('./mercedes.png') no-repeat; 
-    background-size: contain;
-    height: 500px;
-    width: 1000px;
+    width: 200px;
+    height: 100px;
+    background-color: rgb(255, 0, 0);
     position: absolute;
-    bottom: 5vh;
+    z-index: 3;
     left: -200px;
-    top: 500px;
+    top: 700px;
     animation: moveCar 10s forwards;
+    border-radius: 100px 100px 45px 100px;
   }
   
+  .wheel {
+    width: 50px;
+    height: 50px;
+    background-color: #000000;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 4;
+    bottom: 0;
+  }
+  .left {
+    left: 46px;
+    top: 70px;
+  }
+  
+  .right {
+    right: 25px;
+    top: 70px;
+  }
+  
+  .window1 {
+    width: 100px;
+    height: 20px;
+    background-color: #efe9e9;
+    z-index: 4;
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    border-radius: 0px 45px 0px 0px;
+  }
+
   @keyframes moveCar {
     from {
       left: 0px;
@@ -45,3 +75,4 @@ body, html {
       left: calc(100% - 250px);
     }
   }
+  
